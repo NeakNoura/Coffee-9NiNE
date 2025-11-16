@@ -1,0 +1,91 @@
+
+    /* Dashboard Grid Cards */
+    .cardBox {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 25px;
+        margin-bottom: 35px;
+    }
+
+    .cardBox .card {
+        padding: 25px;
+        border-radius: 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.3s ease;
+        text-decoration: none !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+
+    .card .numbers {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .card .cardName {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+
+    /* Recent Orders + Analytics Container */
+    .details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    /* Recent Orders Card */
+.recentOrders {
+    background-color: #4a372f;
+    color: #fff;
+    border-radius: 14px;
+    padding: 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+    .recent-orders-header {
+        background-color: #3e2f2f;
+        padding: 15px 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .recent-orders-table {
+        max-height: 480px;
+        overflow-y: auto;
+    }
+
+    .recent-orders-table table thead tr {
+        background-color: #3e2f2f;
+    }
+
+    /* Analytics Card */
+    .analytics {
+        background-color: #2c2c2c;
+        border-radius: 14px;
+        padding: 0;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .analytics .card-header {
+        background-color: #3e2f2f;
+        padding: 15px 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .analytics canvas {
+        padding: 25px;
+        width: 100% !important;
+        height: 100% !important;
+    }
+

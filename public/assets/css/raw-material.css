@@ -1,0 +1,176 @@
+/* -----------------------------------------------------------
+   GLOBAL THEME — Coffee (#3e2f2f) + Caramel (#db770c)
+----------------------------------------------------------- */
+
+/* ---- CARD ---- */
+.card {
+    background-color: #4b3a2f;       /* coffee */
+    color: #f5f5f5;
+    border-radius: 14px;
+    border: 1px solid #3a2b27;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.35);
+}
+
+.card-header {
+    background-color: #db770c;       /* caramel */
+    color: #fff;
+    font-weight: 700;
+    padding: 15px 20px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+/* ---- RAW HEADER ---- */
+.raw-header h4 {
+    font-weight: 700;
+}
+
+/* -----------------------------------------------------------
+   TABLE STYLING
+----------------------------------------------------------- */
+
+.raw-table thead th {
+    background-color: #4b3a2f;
+    color: #fff;
+    padding: 12px;
+    letter-spacing: 0.4px;
+    font-weight: 700;
+}
+
+.raw-table tbody td {
+    background-color: #3e2f2f;
+    color: #f5f5f5;
+    padding: 12px;
+}
+
+.raw-table tbody tr:hover td {
+    background-color: #5a3d30;
+}
+
+/* Better border look */
+.raw-table th,
+.raw-table td {
+    border: 1px solid #6b4c3b;
+    vertical-align: middle !important;
+}
+
+/* -----------------------------------------------------------
+   BADGES
+----------------------------------------------------------- */
+
+.badge {
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 12px;
+}
+
+/* OK Status */
+.bg-success {
+    background-color: #27ae60 !important;
+}
+
+/* Low Status */
+.bg-danger {
+    background-color: #c0392b !important;
+}
+
+/* -----------------------------------------------------------
+   BUTTONS (UNIFIED THEME)
+----------------------------------------------------------- */
+
+/* GENERAL BUTTON */
+.btn {
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border: none !important;
+    transition: 0.25s;
+}
+
+/* --- Add New Raw Ingredient Button --- */
+.btn-add-material {
+    background-color: #db770c;
+    color: #fff;
+    border-radius: 10px;
+}
+.btn-add-material:hover {
+    background-color: #b36208;
+    transform: scale(1.03);
+}
+
+/* ACTION BUTTONS IN TABLE */
+.btn-action {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Add Stock */
+.btn-success {
+    background-color: #db770c !important;
+    color: #fff !important;
+}
+.btn-success:hover {
+    background-color: #b36208 !important;
+}
+
+/* Reduce */
+.btn-warning {
+    background-color: #f1c40f !important;
+    color: #000 !important;
+}
+.btn-warning:hover {
+    background-color: #d4ac0d !important;
+}
+
+/* Update Material */
+.btn-primary {
+    background-color: #db770c !important;
+    color: #fff !important;
+}
+.btn-primary:hover {
+    background-color: #b36208 !important;
+}
+
+/* Delete */
+.btn-danger {
+    background-color: #c0392b !important;
+    color: #fff !important;
+}
+.btn-danger:hover {
+    background-color: #922b21 !important;
+}
+
+/* -----------------------------------------------------------
+   BACK BUTTON
+----------------------------------------------------------- */
+.btn-outline-light {
+    border: 2px solid #fff !important;
+    color: #fff !important;
+    border-radius: 10px;
+}
+.btn-outline-light:hover {
+    background-color: #fff !important;
+    color: #3e2f2f !important;
+}
+
+/* -----------------------------------------------------------
+   RESPONSIVE
+----------------------------------------------------------- */
+@media (max-width: 768px) {
+    .btn-action {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
+
+    .raw-table {
+        font-size: 0.85rem;
+    }
+}
